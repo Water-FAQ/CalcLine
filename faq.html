@@ -2,15 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="description" content="Ответы на часто задаваемые вопросы о CalcLine.">
-  <meta name="theme-color" content="#0b86f7">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <meta name="theme-color" content="#f2f5f9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#181b20" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css?v=6">
   <title>FAQ — CalcLine</title>
 </head>
 <body>
-  <header class="wrap top"><a class="logo" href="index.html" aria-label="CalcLine — главная"><picture><source media="(prefers-color-scheme:dark)" srcset="calcline-logo-dark.png"><img src="calcline-logo-light.png" alt="CalcLine" width="1668" height="246"></picture></a><nav class="nav" aria-label="Основная навигация"><a href="index.html">Главная</a><a href="index.html#features">Возможности</a><a href="index.html#start">Начало работы</a><a href="faq.html" aria-current="page">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a></nav></header>
+  <header class="site-header"><div class="wrap top"><a class="logo" href="index.html" aria-label="CalcLine — главная"><picture><source media="(prefers-color-scheme:dark)" srcset="assets/images/calcline-logo-dark.png"><img src="assets/images/calcline-logo-light.png" alt="CalcLine" width="1668" height="246"></picture></a><button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-navigation"><svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><nav id="site-navigation" class="nav" aria-label="Основная навигация"><a href="index.html">Главная</a><a href="index.html#features">Возможности</a><a href="index.html#start">Начало работы</a><a href="faq.html" aria-current="page">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a></nav></div></header>
   <main class="wrap content">
     <div class="page-head"><h1>Часто задаваемые вопросы</h1><p>Короткие ответы о запуске, вычислениях, настройках, обновлении и удалении CalcLine.</p></div>
     <div class="faq-list">
@@ -18,7 +19,7 @@
       <details><summary>Какие версии Windows поддерживаются?</summary><div class="faq-answer"><p>CalcLine работает в Windows 10 и более новых версиях Windows.</p></div></details>
       <details><summary>Нужно ли устанавливать программу?</summary><div class="faq-answer"><p>Нет. Скачайте архив, распакуйте его в удобную папку и запустите <code>CalcLine.exe</code>. Запускать программу непосредственно из ZIP-архива не рекомендуется.</p></div></details>
       <details><summary>Почему Windows может показать предупреждение при запуске?</summary><div class="faq-answer"><p>Текущая версия CalcLine не имеет платной цифровой подписи, поэтому Windows SmartScreen может предупредить о запуске неизвестного приложения.</p><p>Скачивайте CalcLine только с официальной страницы или из раздела Releases. Целостность архива можно проверить по опубликованной контрольной сумме SHA-256.</p></div></details>
-      <details><summary>Нужен ли CalcLine доступ к интернету?</summary><div class="faq-answer"><p>Для вычислений интернет не требуется. Выражения, результаты и история обрабатываются локально и не передаются разработчику. Подключение используется только для проверки обновлений, если эта возможность включена.</p></div></details>
+      <details><summary>Нужен ли CalcLine доступ к интернету?</summary><div class="faq-answer"><p>Для вычислений интернет не требуется. Выражения, результаты и история обрабатываются локально и не передаются разработчику. CalcLine не собирает телеметрию. Подключение используется только для проверки обновлений, если эта возможность включена.</p></div></details>
       <details><summary>Где хранятся настройки и история?</summary><div class="faq-answer"><p>По умолчанию файлы находятся в папке <code>%LOCALAPPDATA%\CalcLine</code>. В настройках можно включить хранение данных рядом с <code>CalcLine.exe</code> для полностью портативного использования.</p></div></details>
       <details><summary>Как работают темы оформления?</summary><div class="faq-answer"><p>Доступны светлая, тёмная и системная темы. Системная тема автоматически следует текущему режиму оформления Windows. Дополнительно можно выбрать акцентный цвет интерфейса.</p></div></details>
       <details><summary>Можно ли изменить прозрачность программы?</summary><div class="faq-answer"><p>Да. Прозрачность основной строки настраивается в диапазоне от 50 до 100%. Окна настроек и справки остаются непрозрачными, чтобы сохранить хорошую читаемость.</p></div></details>
@@ -38,7 +39,7 @@
     </div>
   </main>
   <footer class="wrap"><span>© 2026 WaterFAQ · CalcLine распространяется бесплатно</span><nav><a href="index.html">Главная</a><a href="faq.html">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a><a href="uninstall.html">Удаление</a><a href="mailto:waterfaq@ya.ru">waterfaq@ya.ru</a><a href="https://github.com/Water-FAQ/CalcLine">GitHub</a></nav></footer>
-  <button class="back-to-top" type="button" aria-label="Наверх" title="Наверх" aria-hidden="true">↑</button>
-  <script src="site.js"></script>
+  <button class="back-to-top" type="button" aria-label="Наверх" title="Наверх" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l7-7 7 7M12 4v16"/></svg></button>
+  <script src="assets/js/site.js?v=6"></script>
 </body>
 </html>

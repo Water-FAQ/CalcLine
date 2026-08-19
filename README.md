@@ -27,12 +27,13 @@ CalcLine — бесплатный однострочный инженерный 
 - [История версий](https://water-faq.github.io/CalcLine/changelog.html)
 - [Условия использования](https://water-faq.github.io/CalcLine/terms.html)
 - [Удаление программы](https://water-faq.github.io/CalcLine/uninstall.html)
+- [Политика сообщений об уязвимостях](SECURITY.md)
 - [Сообщить об ошибке](https://github.com/Water-FAQ/CalcLine/issues/new?template=bug_report.yml)
 - [Предложить улучшение](https://github.com/Water-FAQ/CalcLine/issues/new?template=feature_request.yml)
 
 ## Конфиденциальность
 
-Вычисления выполняются локально. CalcLine не передаёт разработчику выражения или историю. Интернет используется только для проверки обновлений, если эта возможность включена.
+Вычисления выполняются локально. CalcLine не передаёт разработчику выражения или историю и не собирает телеметрию. Интернет используется только для проверки обновлений, если эта возможность включена.
 
 ## Контакты
 
