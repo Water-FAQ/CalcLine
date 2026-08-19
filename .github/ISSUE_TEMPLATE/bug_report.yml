@@ -1,0 +1,54 @@
+name: Сообщить об ошибке
+description: Сообщите о сбое, неверном результате или проблеме интерфейса CalcLine
+title: "[Ошибка] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Спасибо, что помогаете улучшать CalcLine. Не публикуйте личные или конфиденциальные данные.
+  - type: input
+    id: version
+    attributes:
+      label: Версия CalcLine
+      placeholder: Например, v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Версия Windows
+      placeholder: Например, Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить проблему
+      description: Укажите выражение и последовательность действий.
+      placeholder: "1. Ввёл…\n2. Нажал…\n3. Появилось…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Дополнительные материалы
+      description: При необходимости перетащите сюда снимок экрана.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Проверка перед отправкой
+      options:
+        - label: Я убедился, что в обращении и снимках экрана нет личных или конфиденциальных данных.
+          required: true
