@@ -157,11 +157,13 @@ p { margin: 0 0 14px; }
 .link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 18px;
   flex-wrap: wrap;
+  min-height: 88px;
   margin-top: 42px;
-  padding: 25px 0 38px;
+  padding: 25px 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
 }
