@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CalcLine — бесплатный однострочный инженерный калькулятор для Windows с единицами измерения, историей и вычислением во время ввода.">
+  <meta name="theme-color" content="#0b86f7">
+  <title>CalcLine — инженерный калькулятор в одну строку</title>
+  <style>
+    :root{color-scheme:light;--bg:#f2f5f9;--panel:#fff;--field:#f8fafd;--text:#172235;--muted:#657386;--border:#d6dee8;--accent:#0b86f7;--shadow:#14243a18}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,sans-serif;line-height:1.55}
+    a{color:var(--accent)}.wrap{width:min(1040px,calc(100% - 36px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.logo{font-size:29px;font-weight:650;letter-spacing:-1px;text-decoration:none;color:#0f2d51}.logo span{color:var(--accent)}
+    .nav{display:flex;gap:22px}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center;padding:72px 0 56px}.eyebrow{color:var(--accent);font-weight:650}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.08;letter-spacing:-2px;margin:10px 0 18px}.lead{font-size:20px;color:var(--muted);max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;padding:12px 20px;border:1px solid var(--accent);border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:650}.button.secondary{background:transparent;color:var(--text);border-color:var(--border)}.button.secondary:hover{border-color:var(--accent)}
+    .line-demo{background:var(--panel);border:1px solid var(--border);border-radius:15px;padding:12px;box-shadow:0 18px 50px var(--shadow)}.calc-line{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:10px 13px;background:var(--field);font-family:Consolas,monospace}.result{color:#7f8da1}.hint{margin:12px 4px 0;color:var(--muted);font-size:14px}
+    section{padding:38px 0}h2{font-size:30px;letter-spacing:-.5px;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px}.card h3{margin:0 0 7px;font-size:17px}.card p{margin:0;color:var(--muted)}
+    .info{display:grid;grid-template-columns:1fr 1fr;gap:14px}.steps{counter-reset:step}.step{display:flex;gap:13px;margin:12px 0}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;min-width:27px;height:27px;border-radius:50%;background:var(--accent);color:#fff;font-weight:650}.meta{color:var(--muted)}
+    footer{border-top:1px solid var(--border);margin-top:40px;padding:25px 0 38px;color:var(--muted);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:760px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:42px}.grid,.info{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#181b20;--panel:#20242b;--field:#252a32;--text:#f4f6f8;--muted:#aab2be;--border:#3b424d;--shadow:#0005}.logo{color:#fff}}
+  </style>
+</head>
+<body>
+  <header class="wrap top"><a class="logo" href="#">Calc<span>Line</span></a><nav class="nav"><a href="#features">Возможности</a><a href="#start">Начало работы</a><a href="https://github.com/Water-FAQ/CalcLine/releases">Версии</a></nav></header>
+  <main class="wrap">
+    <div class="hero">
+      <div><div class="eyebrow">Бесплатно · Windows 10 и новее</div><h1>Полноценный калькулятор в одной строке</h1><p class="lead">Введите выражение с клавиатуры — CalcLine сразу покажет результат, проверит единицы и сохранит подтверждённое вычисление в истории.</p><div class="actions"><a id="download" class="button" href="https://github.com/Water-FAQ/CalcLine/releases/latest">Скачать CalcLine</a><a class="button secondary" href="https://github.com/Water-FAQ/CalcLine/releases">Все версии</a></div><p id="version" class="meta">Последняя версия: v1.0.0</p></div>
+      <div class="line-demo"><div class="calc-line"><span>25 MPa × 300 mm²</span><span class="result">= 7,5 kN</span></div><p class="hint">Высокая внутренняя точность и автоматическое преобразование совместимых величин.</p></div>
+    </div>
+    <section id="features"><h2>Возможности</h2><div class="grid">
+      <article class="card"><h3>Вычисление во время ввода</h3><p>Предварительный результат появляется сразу и фиксируется клавишей Enter.</p></article>
+      <article class="card"><h3>Инженерные функции</h3><p>Степени, проценты, логарифмы, тригонометрия, округление и другие функции.</p></article>
+      <article class="card"><h3>Единицы измерения</h3><p>Проверка размерностей и автоматическая конвертация единиц СИ и распространённых систем.</p></article>
+      <article class="card"><h3>История и ans</h3><p>До 100 подтверждённых вычислений и продолжение расчёта от предыдущего результата.</p></article>
+      <article class="card"><h3>Автодополнение</h3><p>Поиск функций, операторов и единиц по обозначению, русскому названию и описанию.</p></article>
+      <article class="card"><h3>Настраиваемый интерфейс</h3><p>Светлая, тёмная и системная темы, акцентный цвет и глобальная горячая клавиша.</p></article>
+    </div></section>
+    <section id="start"><h2>Начало работы</h2><div class="info"><div class="card steps"><div class="step">Скачайте архив последней версии.</div><div class="step">Распакуйте его в удобную папку.</div><div class="step">Запустите CalcLine.exe — установка не требуется.</div></div><div class="card"><h3>Системные требования</h3><p>Windows 10 или новее.</p><h3>Данные пользователя</h3><p>По умолчанию настройки и история находятся в <code>%LOCALAPPDATA%\CalcLine</code>. При необходимости можно включить переносимый режим.</p></div></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 WaterFAQ · CalcLine распространяется бесплатно</span><span><a href="mailto:waterfaq@ya.ru">waterfaq@ya.ru</a> · <a href="https://github.com/Water-FAQ/CalcLine">GitHub</a></span></footer>
+  <script>
+    fetch('update.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>{if(m.version)document.getElementById('version').textContent='Последняя версия: v'+m.version;if(m.url)document.getElementById('download').href=m.url}).catch(()=>{});
+  </script>
+</body>
+</html>
