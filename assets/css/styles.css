@@ -92,8 +92,7 @@ code {
 
 .calc-demo { margin: 40px 0 0; }
 .calc-demo-desktop {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) 38px 40px 42px;
+  display: flex;
   align-items: center;
   gap: 8px;
   min-height: 64px;
@@ -106,6 +105,7 @@ code {
 .demo-logo img { display: block; width: 142px; height: auto; }
 .demo-field {
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
   min-width: 0;
   height: 44px;
@@ -131,7 +131,9 @@ code {
 @keyframes caret-blink { 50% { opacity: 0; } }
 .demo-control {
   display: grid;
+  flex: 0 0 auto;
   place-items: center;
+  width: 40px;
   height: 42px;
   border-radius: 10px;
   color: var(--text);
@@ -140,7 +142,8 @@ code {
 .demo-control.copy svg { width: 20px; height: 20px; }
 .demo-control.pin { background: var(--accent); color: #fff; }
 .demo-control.pin svg { width: 23px; height: 23px; }
-.demo-control.close { font-size: 25px; font-weight: 300; }
+.demo-control.close { width: 42px; }
+.demo-control.close svg { width: 22px; height: 22px; }
 .calc-demo-mobile { display: none; }
 
 .hero-actions {
@@ -305,8 +308,10 @@ footer nav { display: flex; flex-wrap: wrap; gap: 14px; }
     position: absolute;
     top: calc(100% - 2px);
     right: 16px;
-    left: 16px;
+    left: auto;
     display: grid;
+    width: max-content;
+    max-width: calc(100vw - 32px);
     gap: 2px;
     padding: 8px;
     border: 1px solid var(--border);
@@ -320,7 +325,7 @@ footer nav { display: flex; flex-wrap: wrap; gap: 14px; }
     transition: opacity .16s ease, transform .16s ease, visibility .16s ease;
   }
   .nav.is-open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
-  .nav a { padding: 10px 12px; border-radius: 9px; }
+  .nav a { padding: 10px 12px; border-radius: 9px; white-space: nowrap; }
   .nav a:hover, .nav a[aria-current="page"] { background: var(--accent-soft); }
   .hero { padding: 42px 0 40px; }
   .hero h1 { white-space: normal; }

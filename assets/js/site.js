@@ -41,6 +41,16 @@
     updateVisibility();
   }
 
+  document.querySelectorAll('.faq-list details').forEach((details) => {
+    details.addEventListener('toggle', () => {
+      if (!details.open) return;
+      window.requestAnimationFrame(() => {
+        const top = details.getBoundingClientRect().top + window.scrollY - 16;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      });
+    });
+  });
+
   const demos = [...document.querySelectorAll('[data-calc-demo]')];
   if (!demos.length) return;
 
@@ -84,7 +94,7 @@
       for (let length = 1; length <= example.expression.length; length += 1) {
         await waitForVisiblePage();
         render(example.expression.slice(0, length));
-        await wait(48 + Math.random() * 24);
+        await wait(64 + Math.random() * 28);
       }
 
       render(example.expression, example.result, false);

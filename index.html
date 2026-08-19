@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://water-faq.github.io/CalcLine/">
   <meta property="og:image" content="https://water-faq.github.io/CalcLine/assets/images/calcline-logo-light.png">
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-  <link rel="stylesheet" href="assets/css/styles.css?v=6">
+  <link rel="stylesheet" href="assets/css/styles.css?v=7">
   <title>CalcLine — инженерный калькулятор в одну строку</title>
 </head>
 <body>
@@ -36,9 +36,9 @@
             <picture class="demo-logo"><source media="(prefers-color-scheme:dark)" srcset="assets/images/calcline-logo-dark.png"><img src="assets/images/calcline-logo-light.png" alt="" width="1668" height="246"></picture>
             <div class="demo-field"><span class="demo-expression" data-demo-expression>25 MPa * 300 mm^2</span><span class="demo-result" data-demo-result>= 7,5 kN</span><span class="demo-caret" aria-hidden="true"></span></div>
             <span class="demo-control" aria-hidden="true">▼</span>
-            <span class="demo-control copy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="11" height="11" rx="1.5"/><path d="M16 8V5.5A1.5 1.5 0 0014.5 4h-10A1.5 1.5 0 003 5.5v10A1.5 1.5 0 004.5 17H8"/></svg></span>
-            <span class="demo-control pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l7 7M14 3l7 7-4 1-4.5 4.5L12 20l-8-8 4.5-.5L13 7zM8 16l-5 5"/></svg></span>
-            <span class="demo-control close" aria-hidden="true">×</span>
+            <span class="demo-control copy" aria-hidden="true"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="11" height="11" rx="1.5"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-10A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17H8"/></g></svg></span>
+            <span class="demo-control pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-45 12 12)"><path d="M8 4h8l-1.4 5.2 2.4 2.4v1.2H7v-1.2l2.4-2.4z"/><path d="M12 12.8V21"/></g></svg></span>
+            <span class="demo-control close" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg></span>
           </div>
           <div class="calc-demo-mobile" data-calc-demo>
             <div class="demo-field"><span class="demo-expression" data-demo-expression>25 MPa * 300 mm^2</span><span class="demo-result" data-demo-result>= 7,5 kN</span><span class="demo-caret" aria-hidden="true"></span></div>
@@ -48,7 +48,7 @@
 
         <div class="hero-actions">
           <div class="download-group"><a id="download" class="button" href="https://github.com/Water-FAQ/CalcLine/releases/download/v1.0.0/CalcLine_v1.0.0.zip">Скачать CalcLine</a><p id="version" class="meta">Последняя версия: v1.0.0</p></div>
-          <a class="button secondary" href="https://github.com/Water-FAQ/CalcLine/releases">Все версии</a>
+          <a class="button secondary" href="changelog.html">Все версии</a>
         </div>
       </div>
     </div>
@@ -94,6 +94,6 @@
   <footer class="wrap"><span>© 2026 WaterFAQ · CalcLine распространяется бесплатно</span><nav><a href="index.html">Главная</a><a href="faq.html">FAQ</a><a href="changelog.html">Версии</a><a href="terms.html">Условия</a><a href="uninstall.html">Удаление</a><a href="mailto:waterfaq@ya.ru">waterfaq@ya.ru</a><a href="https://github.com/Water-FAQ/CalcLine">GitHub</a></nav></footer>
   <button class="back-to-top" type="button" aria-label="Наверх" title="Наверх" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l7-7 7 7M12 4v16"/></svg></button>
   <script>fetch('update.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>{if(m.version)document.getElementById('version').textContent='Последняя версия: v'+m.version;if(m.download_url)document.getElementById('download').href=m.download_url}).catch(()=>{});</script>
-  <script src="assets/js/site.js?v=6"></script>
+  <script src="assets/js/site.js?v=7"></script>
 </body>
 </html>
