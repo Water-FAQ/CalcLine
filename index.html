@@ -92,5 +92,7 @@
   <script>
     fetch('update.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(m=>{if(m.version)document.getElementById('version').textContent='Последняя версия: v'+m.version}).catch(()=>{});
   </script>
+  <button class="back-to-top" type="button" aria-label="Наверх" title="Наверх" aria-hidden="true">↑</button>
+  <script src="site.js"></script>
 </body>
 </html>
