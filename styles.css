@@ -9,6 +9,7 @@
   --accent: #0b86f7;
   --accent-soft: #e9f4ff;
   --shadow: #14243a18;
+  --shot-shadow: #14243a2b;
   --warning: #fff4e5;
   --warning-text: #9a4b00;
 }
@@ -52,13 +53,35 @@ code {
 .eyebrow { color: var(--accent); font-weight: 650; }
 .hero h1 {
   margin: 10px 0 18px;
-  font-size: clamp(38px, 4.35vw, 48px);
+  font-size: clamp(38px, 4.65vw, 52px);
   line-height: 1.08;
   letter-spacing: -2px;
   white-space: nowrap;
 }
-.lead { max-width: none; color: var(--muted); font-size: 20px; }
-.hero-shot { display: block; width: 100%; margin: 29px 0 0; }
+.lead { max-width: none; color: var(--muted); font-size: 20px; letter-spacing: -.1px; }
+.hero-shot {
+  display: block;
+  width: 100%;
+  margin: 36px 0 0;
+  filter: drop-shadow(0 9px 15px var(--shot-shadow));
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 36px;
+}
+.download-group {
+  display: grid;
+  justify-items: center;
+  width: 190px;
+}
+.download-group .meta {
+  width: 100%;
+  margin: 5px 0 0;
+  text-align: center;
+}
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .button {
   display: inline-flex;
@@ -72,7 +95,7 @@ code {
   font-weight: 650;
   text-decoration: none;
 }
-#download { min-width: 190px; }
+#download { width: 190px; }
 .button:hover { filter: brightness(.96); }
 .button.secondary { border-color: var(--border); background: transparent; color: var(--text); }
 .button.secondary:hover { border-color: var(--accent); }
@@ -155,6 +178,7 @@ p { margin: 0 0 14px; }
 .release-head { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
 .release time { color: var(--muted); }
 .link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.link-grid h3 a { text-decoration: underline; text-underline-offset: 2px; }
 footer {
   display: flex;
   align-items: center;
@@ -191,6 +215,7 @@ footer nav { display: flex; flex-wrap: wrap; gap: 14px; }
     --border: #3b424d;
     --accent-soft: #123457;
     --shadow: #0006;
+    --shot-shadow: #0008;
     --warning: #3a2b18;
     --warning-text: #ffd39a;
   }
