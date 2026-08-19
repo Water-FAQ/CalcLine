@@ -1,0 +1,31 @@
+name: Предложить улучшение
+description: Предложите новую функцию, оператор, единицу измерения или улучшение интерфейса
+title: "[Предложение] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Чего сейчас не хватает?
+      description: Опишите задачу или неудобство, которое должно быть решено.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Предлагаемое решение
+      description: Опишите желаемое поведение и, если возможно, приведите пример.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Категория
+      options:
+        - Математическая функция или оператор
+        - Единицы измерения
+        - Интерфейс и управление
+        - Настройки
+        - Другое
+    validations:
+      required: true
