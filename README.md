@@ -2,7 +2,7 @@
 
 CalcLine — бесплатный однострочный инженерный калькулятор для Windows 10 и новее.
 
-[Официальная страница](https://water-faq.github.io/CalcLine/) · [Скачать актуальную версию](https://github.com/Water-FAQ/CalcLine/releases/latest/download/CalcLine.zip) · [Все выпуски](https://github.com/Water-FAQ/CalcLine/releases)
+[Официальная страница](https://water-faq.github.io/CalcLine/) · [Скачать актуальную версию](https://github.com/Water-FAQ/CalcLine/releases/download/v1.0.0/CalcLine_v1.0.0.zip) · [Все выпуски](https://github.com/Water-FAQ/CalcLine/releases)
 
 ## Возможности
 
@@ -17,7 +17,7 @@ CalcLine — бесплатный однострочный инженерный 
 
 ## Начало работы
 
-1. [Скачайте последнюю версию](https://github.com/Water-FAQ/CalcLine/releases/latest/download/CalcLine.zip).
+1. [Скачайте последнюю версию](https://github.com/Water-FAQ/CalcLine/releases/download/v1.0.0/CalcLine_v1.0.0.zip).
 2. Распакуйте архив в удобную папку.
 3. Запустите `CalcLine.exe`.
 
