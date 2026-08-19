@@ -115,7 +115,7 @@ p { margin: 0 0 14px; }
 .page-head { padding: 54px 0 28px; }
 .page-head h1 { margin: 0 0 12px; font-size: clamp(34px, 5vw, 52px); letter-spacing: -1px; }
 .page-head p { max-width: 760px; color: var(--muted); font-size: 18px; }
-.content { max-width: 860px; }
+.content { max-width: none; }
 .content section { padding: 24px 0; }
 .content ul, .content ol { padding-left: 24px; }
 .content li + li { margin-top: 7px; }
