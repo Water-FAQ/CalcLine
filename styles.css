@@ -14,7 +14,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable; }
 body {
   margin: 0;
   background: var(--bg);
@@ -35,12 +35,13 @@ code {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 21px 0;
+  height: 68px;
+  padding: 0;
 }
-.logo { display: flex; align-items: center; text-decoration: none; }
+.logo { display: flex; flex: 0 0 auto; align-items: center; text-decoration: none; }
 .logo picture, .logo img { display: block; }
 .logo img { width: auto; height: 25px; }
-.nav { display: flex; align-items: center; gap: 21px; }
+.nav { display: flex; flex: 1 1 auto; align-items: center; justify-content: flex-end; gap: 21px; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
 .hero {
